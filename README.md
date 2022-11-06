@@ -1,6 +1,11 @@
 # Automatic-Bell-System
   Hi🙋‍♂️this is V S KANDHAN,Happy to see you here,Kudos that you curiously scanned the QR.Here we are going to build the AUTOMATIC BELL SYSTEM for institutions.
 The conventional way of ringing the bell in schools,colleges require a physical presence of the person to ring the bell at the apropriate periods.In our college the watchman need to be present there to ring the bell after each and every periods.So to overcome this headache process,i tried something same as already available in the market,but the main moto is to buid this one in cost effective way,So thats the final thing which was installed in our college,in the last session i also attach the total cost and price details for each component used in this project.
+
+# ⚠WARNING⚠
+  Remind this,You are playing with the AC voltage in this project,not the DC voltage.So please make the safety precautions before handling with the AC supply.   
+  ⚡Use Electrical insulated rubber gloves    
+  ⚡Wear Shoes or slippers
 # Detailed Overview Of This-Project
   This project is based on Arduino Nano,you can also choose Arduino UNO,and whatever MicroControllers you are comfortable with,i choosed Nano for its Size and cost.The another main component in this project is the RTC(Real Time Clock) Module,let me cover this RTC in next section.and the last component is 5V the Relay Module.First to know the current time we need the RTC to send the current time to arduino,and in the arduino we made the logic for the bell according to the RTC current time,i think right now you guessed the logic.Through RTC we will get the current time,according to the current time,in arduino we made the conditional statements,in this case"if else" statements to ring the bell according to the period timings.In the conditionsl statement,if the current time equals to the period timings,then turn the Relay HIGH(turns on) to ring the bell,otherwise keeps the Relay LOW(turns off).So this is the simple logic behind this project.You may not wonder about the logic😂,but this logic is much enough to make these things done,we can also use other conditonal statements like "Switch case" thats your choice.Try to keep your code as sample as it.And the last thing is,if incase of an need to ring the bell,other than normal period timings,we can also use Alternative switch to ring the bell without the Arduino,also attached the circuit diagram for this entire connections.
 # Components Required
@@ -45,4 +50,179 @@ Ground: This pin connects the GND terminal of the power supply.
 # Circuit Diagram
 ![Nano_Circuit](https://user-images.githubusercontent.com/90204263/200178623-41ef6f28-046e-45f5-beed-ccb4d06dd0e4.jpg)
 # Initialise and set the Time in RTC
-  After completing the circuit as same as above,then you need to first initialise and set the Time in RTC module,for that you need to include RTC library in our code,there are N number of libraries availabel for RTC,but i choosed the RTC DS3231 library by ADAFRUIT,which is comfortable for me,you can also go with it.
+  After completing the circuit as same as above,then you need to first initialise and set the Time in RTC module,for that you need to include RTC library in our code,there are N number of libraries availabel for RTC,but i choosed the RTC DS3231 library by http://www.RinkyDinkElectronics.com/,which is comfortable for me,you can also go with it.Click the link and download the library zip file and include the library.After that in the example section in Arduino IDE,select the DS3231 example,provided by the library you included,and set the time,or you can also upload the below code snippet,by uncommenting the set time code line and after the upload you need to comment it back.   
+CODE:  
+
+  
+#include <DS3231.h>
+
+// Init the DS3231 using the hardware interface
+DS3231  rtc(SDA, SCL);
+
+void setup()
+{
+  // Setup Serial connection
+  Serial.begin(115200);
+  // Uncomment the next line if you are using an Arduino Leonardo
+  //while (!Serial) {}
+  
+  // Initialize the rtc object
+  rtc.begin();
+  
+  // The following lines can be uncommented to set the date and time
+  //rtc.setDOW(WEDNESDAY);     // Set Day-of-Week to SUNDAY
+  //rtc.setTime(12, 0, 0);     // Set the time to 12:00:00 (24hr format)
+  //rtc.setDate(1, 1, 2014);   // Set the date to January 1st, 2014
+}
+
+void loop()
+{
+  // Send Day-of-Week
+  Serial.print(rtc.getDOWStr());
+  Serial.print(" ");
+  
+  // Send date
+  Serial.print(rtc.getDateStr());
+  Serial.print(" -- ");
+
+  // Send time
+  Serial.println(rtc.getTimeStr());
+  
+  // Wait one second before repeating :)
+  delay (1000);
+}     
+
+Now our RTC is ready with the current time,its time to upload our main program,and after uploading we just completed our project Done 🤩.You can also copy the code from the file Nano_Source.ino in this Repo.
+# Main Program        
+
+#include <DS3231.h>
+
+// Init the DS3231 using the hardware interface
+DS3231  rtc(SDA, SCL);
+
+
+
+int rpin=3;
+void setup()
+{
+  // Setup Serial connection
+   
+   Serial.begin(115200);
+   pinMode(rpin,OUTPUT);
+ 
+  // Uncomment the next line if you are using an Arduino Leonardo
+  //while (!Serial) {}
+  
+  // Initialize the rtc object
+  rtc.begin();
+  
+  // The following lines can be uncommented to set the date and time
+  //rtc.setDOW(FRIDAY);     // Set Day-of-Week to SUNDAY
+  //rtc.setTime(3,50, 30);     // Set the time to 12:00:00 (24hr format)
+  //rtc.setDate(4, 11, 2022);   // Set the date to January 1st, 2014
+}
+
+void loop()
+{
+  //Declare variable for current time
+  String tt=rtc.getTimeStr();
+ 
+ 
+  if(tt=="09:10:00"){
+    //Turns Relay ON
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    //Turns Relay OFF    
+    digitalWrite(rpin,HIGH);
+  }
+  else if(tt=="10:00:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="10:50:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="11:10:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="12:00:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="12:50:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="13:50:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="14:40:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="15:30:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="15:40:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+   else if(tt=="16:30:00"){
+    digitalWrite(rpin,LOW);
+    delay(5000);
+    digitalWrite(rpin,HIGH);
+  }
+ 
+  
+  
+ 
+  else{
+    digitalWrite(rpin,HIGH);
+  }
+ 
+  // Send Day-of-Week
+   
+  Serial.print(rtc.getDOWStr());
+  Serial.print(" ");
+  
+  // Send date
+  Serial.print(rtc.getDateStr());
+  Serial.print(" -- ");
+
+  // Send time
+  Serial.println(rtc.getTimeStr());
+  
+  // Wait one second before repeating :)
+  delay (1000);
+}   
+
+
+# ⚠WARNING⚠
+  Remind this,You are playing with the AC voltage in this project,not the DC voltage.So please make the safety precautions before handling with the AC supply.   
+  ⚡Use Electrical insulated rubber gloves    
+  ⚡Wear Shoes or slippers
+  
+# ❤THANK YOU❤
+  If you like this and found to be usefull to you,share your feedback to me through  
+  https://www.instagram.com/_._vsk_._/    
+  https://www.linkedin.com/in/kandhan-vs-570455214/    
+  kandhanvsk@gmail.com       
+  And to know more about me catch me here    
+  https://kandhanvs.site/#Home
+  
+      
+      
+
