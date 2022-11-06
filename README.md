@@ -220,7 +220,7 @@ void loop()
   https://www.instagram.com/_._vsk_._/    
   https://www.linkedin.com/in/kandhan-vs-570455214/    
   kandhanvsk@gmail.com       
-  And to know more about me catch me here    
+  And to Explore more about me visit    
   https://kandhanvs.site/#Home
   
       
