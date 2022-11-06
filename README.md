@@ -50,7 +50,7 @@ Ground: This pin connects the GND terminal of the power supply.
 # Circuit Diagram
 ![Nano_Circuit](https://user-images.githubusercontent.com/90204263/200178623-41ef6f28-046e-45f5-beed-ccb4d06dd0e4.jpg)
 # Initialise and set the Time in RTC
-  After completing the circuit as same as above,then you need to first initialise and set the Time in RTC module,for that you need to include RTC library in our code,there are N number of libraries availabel for RTC,but i choosed the RTC DS3231 library by http://www.RinkyDinkElectronics.com/,which is comfortable for me,you can also go with it.Click the link and download the library zip file and include the library.After that in the example section in Arduino IDE,select the DS3231 example,provided by the library you included,and set the time,or you can also upload the below code snippet,by uncommenting the set time code line and after the upload you need to comment it back.   
+  After completing the circuit as same as above,then you need to first initialise and set the Time in RTC module,for that you need to include RTC library in our code,there are N number of libraries availabel for RTC,but i choosed the RTC DS3231 library by http://www.RinkyDinkElectronics.com/ ,which is comfortable for me,you can also go with it.Click the link and download the library zip file and include the library.After that in the example section in Arduino IDE,select the DS3231 example,provided by the library you included,and set the time,or you can also upload the below code snippet,by uncommenting the set time code line and after the upload you need to comment it back.   
 CODE:  
 
   
