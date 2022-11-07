@@ -213,8 +213,17 @@ void loop()
 # ⚠WARNING⚠
   Remind this,You are playing with the AC voltage in this project.So please make the safety precautions before handling with the AC supply.   
   ⚡Use Electrical insulated rubber gloves    
-  ⚡Wear Shoes or slippers
-  
+  ⚡Wear Shoes or slippers   
+  # Components Price Details 
+    1.Arduino Nano        - Rs.450    
+    2.RTC DS3231          - Rs.200    
+    3.5V Relay 2 Channel  - Rs.125 (you can also buy single channel Relay)
+    4.Bell Switch         - Rs.25
+    5.DC Adapter for Nano - Rs.150
+    6.Nano USB Cable      - Rs.50 (if u r using the Nano for the first time)
+                    Total = Rs.1000
+    NOTE:I have purchased these components in Ritchie Street,if you but these components from online the price may vary,and i have not included jumper wires,breadboard prices in the list,if you entirely new to these craftings,you need t purchase jumpers of type(MALE TO MALE, MALE TO FEMALE, FEMALE TO FEMALE), and breadboard to make the things simpler.And the last thing is if you purchased Arduino Nano you need to solder the pins for the easy access.   
+    
 # ❤THANK YOU❤
   If you like this and found to be usefull to you,share your feedback to me through  
   https://www.instagram.com/_._vsk_._/    
