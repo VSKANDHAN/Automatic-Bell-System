@@ -1,6 +1,6 @@
 # Automatic-Bell-System
   Hi🙋‍♂️this is V S KANDHAN,Happy to see you here,Kudos that you curiously scanned the QR.Here we are going to build the AUTOMATIC BELL SYSTEM for institutions.
-The conventional way of ringing the bell in schools,colleges require a physical presence of the person to ring the bell at the apropriate periods.In our college the watchman need to be present there to ring the bell after each and every periods.So to overcome this headache process,i tried something same as already available in the market,but the main moto is to buid this one in cost effective way,So thats the final thing which was installed in our college,in the last session i also attach the total cost and price details for each component used in this project.
+The conventional way of ringing the bell in schools,colleges require a physical presence of the person to ring the bell at the apropriate periods.In our college the watchman need to be present there to ring the bell after each and every periods.So to overcome this headache process,i tried something same as already available in the market,but the main moto is to build this one in cost effective way,So thats the final thing which was installed in our college,in the last session i also attach the total cost and price details for each component used in this project.
 
 # ⚠WARNING⚠
   Remind this,You are playing with the AC voltage in this project.So please make the safety precautions before handling with the AC supply.   
