@@ -1,5 +1,5 @@
 # Automatic-Bell-System
-  Hi🙋‍♂️this is V S KANDHAN,Happy to see you here,Kudos that you curiously scanned the QR.Here we are going to build the AUTOMATIC BELL SYSTEM for institutions.
+  Hi🙋‍♂️this is [V S KANDHAN](https://kandhanvs.site/),Happy to see you here,Kudos that you curiously scanned the QR.Here we are going to build the AUTOMATIC BELL SYSTEM for institutions.
 The conventional way of ringing the bell in schools,colleges require a physical presence of the person to ring the bell at the apropriate periods.In our college the watchman need to be present there to ring the bell after each and every periods.So to overcome this headache process,i tried something same as already available in the market,but the main moto is to build this one in cost effective way,So thats the final thing which was installed in our college,in the last session i also attach the total cost and price details for each component used in this project.
 
 # ⚠WARNING⚠
@@ -51,9 +51,8 @@ Ground: This pin connects the GND terminal of the power supply.
 ![Nano_Circuit](https://user-images.githubusercontent.com/90204263/200178623-41ef6f28-046e-45f5-beed-ccb4d06dd0e4.jpg)
 # Initialise and set the Time in RTC
   After completing the circuit as same as above,then you need to first initialise and set the Time in RTC module,for that you need to include RTC library in our code,there are N number of libraries availabel for RTC,but i choosed the RTC DS3231 library by http://www.RinkyDinkElectronics.com/ ,which is comfortable for me,you can also go with it.Click the link and download the library zip file and include the library.After that in the example section in Arduino IDE,select the DS3231 example,provided by the library you included,and set the time,or you can also upload the below code snippet,by uncommenting the set time code line and after the upload you need to comment it back.   
-CODE:  
-
-  
+CODE: 
+```
 #include <DS3231.h>
 
 // Init the DS3231 using the hardware interface
@@ -90,11 +89,12 @@ void loop()
   
   // Wait one second before repeating :)
   delay (1000);
-}     
+}
+```
 
 Now our RTC is ready with the current time,its time to upload our main program,and after uploading we just completed our project Done 🤩.You can also copy the code from the file Nano_Source.ino in this Repo.
-# Main Program        
-
+# Main Program 
+  ```
 #include <DS3231.h>
 
 // Init the DS3231 using the hardware interface
@@ -207,7 +207,8 @@ void loop()
   
   // Wait one second before repeating :)
   delay (1000);
-}   
+}  
+```
 
 
 # ⚠WARNING⚠
@@ -221,14 +222,15 @@ void loop()
     4.Bell Switch         - Rs.25
     5.DC Adapter for Nano - Rs.150
     6.Nano USB Cable      - Rs.50 (if u r using the Nano for the first time)
-                    Total = Rs.1000
-    NOTE:I have purchased these components in Ritchie Street,if you but these components from online the price may vary,and i have not included jumper wires,breadboard prices in the list,if you entirely new to these craftings,you need t purchase jumpers of type(MALE TO MALE, MALE TO FEMALE, FEMALE TO FEMALE), and breadboard to make the things simpler.And the last thing is if you purchased Arduino Nano you need to solder the pins for the easy access.   
+                    Total = Rs.1000         
+
+ NOTE: I have purchased these components in Ritchie Street,if you but these components from online the price may vary,and i have not included jumper wires,breadboard prices in the list,if you entirely new to these craftings,you need t purchase jumpers of type(MALE TO MALE, MALE TO FEMALE, FEMALE TO FEMALE), and breadboard to make the things simpler.And the last thing is if you purchased Arduino Nano you need to solder the pins for the easy access.   
     
 # ❤THANK YOU❤
   If you like this and found to be usefull to you,share your feedback to me through  
-  https://www.instagram.com/_._vsk_._/    
-  https://www.linkedin.com/in/kandhan-vs-570455214/    
-  kandhanvsk@gmail.com       
+  [Instagram](https://www.instagram.com/_._vsk_._/)    
+  [Linkedin](https://www.linkedin.com/in/kandhan-vs-570455214/)    
+ [Mail](kandhanvsk@gmail.com)       
   And to Explore more about me visit    
   https://kandhanvs.site/#Home
   
