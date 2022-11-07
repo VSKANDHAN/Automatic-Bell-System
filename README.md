@@ -3,17 +3,17 @@
 The conventional way of ringing the bell in schools,colleges require a physical presence of the person to ring the bell at the apropriate periods.In our college the watchman need to be present there to ring the bell after each and every periods.So to overcome this headache process,i tried something same as already available in the market,but the main moto is to buid this one in cost effective way,So thats the final thing which was installed in our college,in the last session i also attach the total cost and price details for each component used in this project.
 
 # ⚠WARNING⚠
-  Remind this,You are playing with the AC voltage in this project,not the DC voltage.So please make the safety precautions before handling with the AC supply.   
+  Remind this,You are playing with the AC voltage in this project.So please make the safety precautions before handling with the AC supply.   
   ⚡Use Electrical insulated rubber gloves    
   ⚡Wear Shoes or slippers
 # Detailed Overview Of This-Project
-  This project is based on Arduino Nano,you can also choose Arduino UNO,and whatever MicroControllers you are comfortable with,i choosed Nano for its Size and cost.The another main component in this project is the RTC(Real Time Clock) Module,let me cover this RTC in next section.and the last component is 5V the Relay Module.First to know the current time we need the RTC to send the current time to arduino,and in the arduino we made the logic for the bell according to the RTC current time,i think right now you guessed the logic.Through RTC we will get the current time,according to the current time,in arduino we made the conditional statements,in this case"if else" statements to ring the bell according to the period timings.In the conditionsl statement,if the current time equals to the period timings,then turn the Relay HIGH(turns on) to ring the bell,otherwise keeps the Relay LOW(turns off).So this is the simple logic behind this project.You may not wonder about the logic😂,but this logic is much enough to make these things done,we can also use other conditonal statements like "Switch case" thats your choice.Try to keep your code as sample as it.And the last thing is,if incase of an need to ring the bell,other than normal period timings,we can also use Alternative switch to ring the bell without the Arduino,also attached the circuit diagram for this entire connections.
+  This project is based on Arduino Nano,you can also choose Arduino UNO,and whatever MicroControllers you are comfortable with,i choosed Nano for its Size and cost.The another main component in this project is the RTC(Real Time Clock) Module,let me cover this RTC in next section.and the last component is 5V the Relay Module.First to know the current time we need the RTC to send the current time to arduino,and in the arduino we made the logic for the bell according to the RTC current time,i think right now you guessed the logic.Through RTC we will get the current time,according to the current time,in arduino we made the conditional statements,in this case"if else" statements to ring the bell according to the period timings.In the conditionsl statement,if the current time equals to the period timings,then turn the Relay LOW(turns on) to ring the bell,otherwise keeps the Relay HIGH(turns off).So this is the simple logic behind this project.You may not wonder about the logic😂,but this logic is much enough to make these things done,we can also use other conditonal statements like "Switch case" thats your choice.Try to keep your code as simple as it.And the last thing is,if incase of an need to ring the bell,other than normal period timings,we can also use Alternative switch to ring the bell without the Arduino,also attached the circuit diagram for this entire connections.
 # Components Required
   1.Arduino Nano      
   2.RTC(DS3231) Module    
   3.5V Relay Module    
   4.Switch    
-  5.Bell(if provided in college or school no needed😅)use Home Calling-Bell for testing😁
+  5.Bell(if provided in college or school not needed😅)use Home Calling-Bell for testing😁
 # Arduino Nano
   After Arduino UNO, the most popular board in the Arduino line-up is probably the Arduino Nano. Both UNO and Nano are based on ATmega328P Microcontroller but Nano is significantly smaller in size compared to UNO.Despite the size, Arduino Nano packs in more or less the same features as UNO. If you compare UNO and Nano, then Nano lacks the DC Power Jack and contains a mini-B type USB connector. Other than that Nano is very similar to UNO in terms of functionality.The Nano board is designed in such a way that the pins are breadboard friendly so that you can easily mount it on one for your DIY projects.Overall, the Arduino Nano is a very good alternative to the mighty Arduino UNO and is available at a lower price. Personally speaking, I suggest Arduino Nano over UNO as it is cheaper, breadboard friendly, small in size and has couple of more pins (digital and analog IO) than UNO.
    
@@ -211,7 +211,7 @@ void loop()
 
 
 # ⚠WARNING⚠
-  Remind this,You are playing with the AC voltage in this project,not the DC voltage.So please make the safety precautions before handling with the AC supply.   
+  Remind this,You are playing with the AC voltage in this project.So please make the safety precautions before handling with the AC supply.   
   ⚡Use Electrical insulated rubber gloves    
   ⚡Wear Shoes or slippers
   
