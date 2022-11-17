@@ -224,7 +224,7 @@ void loop()
     6.Nano USB Cable      - Rs.50 (if u r using the Nano for the first time)
                     Total = Rs.1000         
 
- NOTE: I have purchased these components in Ritchie Street,if you but these components from online the price may vary,and i have not included jumper wires,breadboard prices in the list,if you entirely new to these craftings,you need t purchase jumpers of type(MALE TO MALE, MALE TO FEMALE, FEMALE TO FEMALE), and breadboard to make the things simpler.And the last thing is if you purchased Arduino Nano you need to solder the pins for the easy access.   
+ NOTE: I have purchased these components in Ritchie Street,if you but these components from online the price may vary,and i have not included jumper wires,breadboard prices in the list,if you entirely new to these craftings,you need tO purchase jumpers of type(MALE TO MALE, MALE TO FEMALE, FEMALE TO FEMALE), and breadboard to make the things simpler.And the last thing is if you purchased Arduino Nano you need to solder the pins for the easy access.   
     
 # ❤THANK YOU❤
   If you like this and found to be usefull to you,share your feedback to me through  
