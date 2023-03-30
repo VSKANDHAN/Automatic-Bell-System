@@ -232,7 +232,7 @@ void loop()
   [Linkedin](https://www.linkedin.com/in/kandhan-vs-570455214/)    
  [Mail](kandhanvsk@gmail.com)       
   And to Explore more about me visit    
-  https://kandhanvs.site/#Home
+  https://vskandhan.live/
   
       
       
